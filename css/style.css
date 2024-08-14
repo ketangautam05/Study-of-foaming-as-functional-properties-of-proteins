@@ -1,0 +1,1166 @@
+/* Mobile devices (landscape only) */
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    /* styles here */
+
+
+}
+
+
+@font-face {
+    font-family: digital;
+    src:url('../fonts/digital-7-webfont.woff2') format('woff2'),
+        url('../fonts/digital-7-webfont.woff') format('woff'),
+        url("../fonts/digital-7.ttf") format('truetype');
+  } 
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 98vmax;
+    height: 1vmax; */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgb(170, 165, 121);
+    overflow: hidden;
+}
+
+.main{
+    height: 45.8vmax;
+    width: 100vmax;
+    background-color: red;
+    position: relative;
+}
+
+.header{
+    border: 1px solid black;
+    background-color: aqua;
+    height: 3vmax;
+    width: 100vmax; 
+    position: absolute;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+}
+
+#ins{
+    font-size: 2vw;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 1%;
+}
+
+#text{
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: blue;
+    /* padding: 1%; */
+}
+
+.footer{
+    position: absolute;
+    align-items: center;
+    top: 3vmax;
+    height: 42.8vmax;
+    width: 100%;
+    background-color: rgb(226, 239, 33);
+}
+
+#experiment{
+    /* top: 8%; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: blueviolet;
+    /* border: 1px solid black; */
+    /* visibility: hidden; */
+}
+
+#start{
+    position:absolute;
+    border-radius: 10%;
+    padding: 0.5%;
+    font-size: 1vw;
+    left: 90%;
+    top: 90%;
+    border: none;
+    background-color: rgb(6, 255, 247);
+    box-shadow: 1px 1px 0px 0.5px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    animation: vibrate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#start:active{
+    scale: 0.9;
+    transition: all ease 0.2s;
+}
+
+
+
+
+
+
+
+
+
+/* ******************************************       Equipments   ************************************** */
+
+#startinglab{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    visibility: visible;    
+
+}
+
+#workingtable{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    visibility: visible;
+
+}
+
+
+/* ********************************************************************   all elements   ********************************************************************** */
+
+
+.eflask{
+    position: absolute;
+    height: 25%;
+    width: 9.5%;
+    bottom: 10%;
+    /* left: 20%; */
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#s1{
+    left: 40%;
+}
+
+#s2{
+    left: 51%;
+}
+
+#s3{
+    left: 62%;
+}
+
+#s4{
+    left: 73%;
+}
+
+#s5{
+    left: 84%;
+}
+
+.fsol{
+    position: absolute;
+    /* height: 10.3%; */
+    height: 0%;
+    width: 7.8%;
+    bottom: 10.2%;
+    /* top: 79.5%; */
+    transition: all;
+    transition-duration: 1s;
+}
+
+#sol1{
+    left: 41.38%;
+}
+
+#sol2{
+    left: 52.38%;
+}
+
+#sol3{
+    left: 63.38%;
+}
+
+#sol4{
+    left: 74.38%;
+}
+
+#sol5{
+    left: 85.38%;
+}
+
+
+
+
+
+
+#mcylinder{
+    position: absolute;
+    height: 30%;
+    width: 5%;
+    bottom: 10%;
+    left: 8%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#msolution{
+    position: absolute;
+    height: 0%;
+    width: 2.78%;
+    /* top: 62%; */
+    bottom: 11%;
+    left: 9.1%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#ms{
+    position: absolute;
+    height: 31%;
+    width: 0.3%;
+    bottom: 14%;
+    left: 10.7%;
+    transition: all;
+    /* transition-duration: 1s; */
+    visibility: hidden;
+    /* left: 39.2%;
+    height: 55%;
+    top: 27.5%; */
+}
+
+#distilled{
+    position: absolute;
+    height: 30%;
+    width: 10%;
+    top: 60%;
+    left: 25%;
+    transition: all;
+    transition-duration: 1s;
+
+
+}
+
+#dwatersol{
+    position: absolute;
+    height: 21.8%;
+    width: 6.5%;
+    /* top: 68%; */
+    bottom: 10.2%;
+    left: 28.5%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#machine{
+    position: absolute;
+    height: 20%;
+    width: 18%;
+    top: 70%;
+    left: 3%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#on{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    padding: 0.1%;
+    background-color: red;
+    border-radius: 10%;
+    font-size: 0.8vw;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#on:active{
+    scale: 0.9;
+}
+
+#tare{
+    position: absolute;
+    top: 82%;
+    left: 16.5%;
+    color: rgb(0, 0, 0);
+    padding: 0.1%;
+    background-color: rgb(238, 245, 42);
+    border-radius: 10%;
+    font-size: 0.8vw;
+    /* box-shadow: none; */
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#tare:active{
+    scale: 0.9;
+}
+
+
+#reading{
+    position: absolute;
+    top: 79.5%;
+    /* left: 8.9%; */
+    right: 85.53%;
+    font-family: digital;
+    font-weight: 300;
+    color: rgb(138, 234, 3);
+    font-size: 2.3vw;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+    
+}
+
+#protien{
+    position: absolute;
+    height: 28%;
+    width: 9%;
+    top: 63%;
+    left: 30%;
+    /* visibility: hidden; */
+}
+
+#protiencap{
+    position: absolute;
+    height: 3%;
+    width: 5.7%;
+    top: 61.5%;
+    left: 31.6%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#spatula{
+    position: absolute;
+    height: 20%;
+    top: 83%;
+    left: 15%;
+    rotate: 30deg;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.sample{
+    position: absolute;
+    height: 7%;
+    width: 3.3%;
+    top: 65.8%;
+    /* top: 42.6%; */
+    left: 32.5%;
+    /* left: 32.9%; */
+    rotate: -50deg;
+    transition: all;
+    transition-duration: 1s;
+
+    /* visibility: visible; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#stp1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    /* visibility: hidden; */
+}
+
+#stp2{
+    position: absolute;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#stp3{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#stand{
+    position: absolute;
+    height: 65%;
+    width: 16%;
+    top: 30%;
+    left: 10%;
+}
+
+#completestirrer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* top: -1%; */
+    transition: all;
+    transition-duration: 1s;
+    animation: vibrate;
+    animation-duration: 0.001s;
+    animation-iteration-count: 0;
+}
+
+#stirrer{
+    position: absolute;
+    height: 70%;
+    width: 12.5%;
+    top: 0.5%;
+    left: 10%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+#blade{
+    position: absolute;
+    height: 2%;
+    width: 3.2%;
+    top: 70%;
+    left: 17.1%;
+    transition: all;
+    transition-duration: 1s;
+    animation: mixer;
+    animation-duration: 0.001s;
+    animation-iteration-count: 0;
+}
+
+#nob{
+    position: absolute;
+    height: 8%;
+    top: 27.8%;
+    left: 17%;
+    transition: all;
+    transition-duration: 0.1s;
+    
+}
+
+#nobleft{
+    position: absolute;
+    height: 7%;
+    width: 1%;
+    background-color: aqua;
+    top: 28.3%;
+    left: 16.8%;
+    animation: blinkingnob;
+    animation-duration: 0.8s;
+    animation-iteration-count:0;
+    opacity: 0%;
+}
+
+#nobright{
+    position: absolute;
+    height: 7%;
+    width: 1%;
+    background-color: aqua;
+    top: 28.3%;
+    left: 19.8%;
+    animation: blinkingnob;
+    animation-duration: 0.8s;
+    animation-iteration-count:0;
+    opacity: 0%;
+}
+
+#bit{
+    position: absolute;
+    height: 27.55%;
+    width: 4%;
+    top: 42.86%;
+    left: 16.66%;
+    opacity: 100%;
+    transition: all;
+    transition-duration: 0.2s;
+    /* animation: slideFromLeft 1s ease-in-out forwards;  */
+}
+
+#poweroff{
+    position: absolute;
+    height: 3%;
+    width: 1.5%;
+    top: 37%;
+    left: 16.2%;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+#poweron{
+    position: absolute;
+    height: 3%;
+    width: 1.5%;
+    top: 37%;
+    left: 16.2%;
+    transition: all;
+    transition-duration: 0.1s;
+    visibility: hidden;
+    opacity: 0%;
+
+}
+
+
+#rpm{
+    position: absolute;
+    height: 3%;
+    width: 1.8%;
+    top: 24.5%;
+    left: 16%;
+    transition: all;
+    transition-duration: 0.1s;
+    
+}
+
+#timerbtn{
+    position: absolute;
+    height: 3%;
+    width: 2.2%;
+    top: 24.5%;
+    left: 18%;
+    transition: all;
+    transition-duration: 0.1s;
+    
+}
+
+#startbtn{
+    position: absolute;
+    height: 3%;
+    width: 1.5%;
+    top: 24.5%;
+    left: 20%;
+    transition: all;
+    transition-duration: 0.1s;
+
+}
+
+#rpm:active,#timerbtn:active,#startbtn:active,#poweron:active,#poweroff:active{
+    scale: 0.9;
+}
+
+#values{
+    position: absolute;
+    height: 20.6%;
+    width: 5.5%;
+    left: 16%;
+    top: 3%;
+    color: rgb(196, 247, 254);
+    opacity: 0%;
+    transition: all;
+    transition-duration: 1s;
+    font-family: digital;
+    overflow: hidden;
+
+}
+
+#values1{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(57, 179, 255);
+    opacity: 8%;
+}
+
+#vrpm{
+    position: absolute;
+    right: 0%;
+    padding-right: 5%;
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+
+#realrpm{
+    position: absolute;
+    right: 0%;
+    padding-right: 5%;
+    top: 20%;
+    font-size: 0.7vw;
+    font-weight: 100;
+
+}
+
+#srpm{
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    padding-right: 5%;
+    font-size: 1.2vw;
+    font-weight: 100;
+    /* transition: all; */
+    animation: blinking;
+    animation-duration: 0.8s;
+    animation-iteration-count:0;
+}
+
+#setrpm{
+    position: absolute;
+    left: 5%;
+    padding-right: 5%;
+    top: 40%;
+    font-size: 0.7vw;
+    font-weight: 100;
+}
+
+#timerdiv{
+    position: absolute;
+    background-color: rgb(96, 165, 225);
+    width: 100%;
+    height: 40%;
+    opacity: 20%;
+    top: 60%;
+}
+
+#timeh{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    font-size: 0.7vw;
+    font-weight: 100;
+    opacity: 100%;
+
+}
+
+#settimeh{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    font-size: 0.7vw;
+    font-weight: 100;
+    opacity: 100%;
+
+}
+
+#settimetext{
+    position: absolute;
+    top: 90%;
+    /* left: 50%; */
+    right: 5%;
+    font-size: 0.6vw;
+    font-weight: 100;
+    opacity: 100%;
+
+}
+
+#timevalue{ 
+    position: absolute;
+    display: flex; 
+    height: 30%;
+    width: 100%;    
+    top: 62%;
+    left: 50%;
+    padding-right: 5%;
+    font-size: 1.3vw; 
+    font-family: digital;
+    
+} 
+
+#timevalue1{ 
+    position: absolute;
+    display: flex; 
+    height: 30%;
+    width: 100%;    
+    top: 78%;
+    left: 60%;
+    padding-right: 5%;
+    font-size: 1vw; 
+    
+} 
+
+#minset{
+    animation: blinking;
+    animation-duration: 0.8s;
+    animation-iteration-count:0;
+}
+  
+#secset{
+    animation: blinking;
+    animation-duration: 0.8s;
+    animation-iteration-count:0;
+}
+  
+#cyclone{
+    position: absolute;
+    width: 7.8%;
+    top: 85.5%;
+    /* height: 10%; */
+    height: 0%;
+    left: 14.88%;   
+    transition: all;
+    transition-duration: 5s;
+    animation: vibrate;
+    animation-duration: 0.001s;
+    animation-iteration-count: 0;
+}
+
+
+.foams{
+    position: absolute;
+    height: 0%;
+    /* height: 0%; */
+    width: 7.83%;
+    left: 14.84%;
+    bottom: 14.5%;
+    /* top: 79.5%; */
+    transition: all;
+    transition-duration: 110s;
+}
+
+#stp4{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    visibility: hidden;
+}
+
+
+.m200{
+    position: absolute;
+    height: 60%;
+    width: 10%;
+    bottom: 10%;
+    left: 10%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+
+.m200text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    top: 50%;
+    left: 13.2%;
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0%;
+    /* border: 1px solid black; */
+}
+
+#fallingfoam{
+
+    position: absolute;
+    height: 0%;
+    width: 1%;
+    left: 36.7%;
+    bottom: 68.7%;
+    transition: all;
+    transition-duration: 1s;
+
+}
+
+#c1,#c2,#c3,#c4,#c5{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#c1{
+    left: 20%;
+}
+
+#c2{
+    top: 5%;
+    left: 7%;
+}
+
+#c3{
+    top: -5%;
+    left: 5%;
+}
+
+#c4{
+    top: 5%;
+    left: -3%;
+}
+
+#c5{
+    top: -5%;
+    left: -5%;
+}
+
+.cfoams{
+    position: absolute;
+    height: 0%;
+    width: 5.6%;
+    left: 12.2%;
+    /* bottom: 12%; */
+    bottom: 13%;
+    transition: all;
+    transition-duration: 4s;
+
+}
+
+
+
+
+#tbl1{
+    position: absolute;
+    background-color: aliceblue;
+    border: 1px solid black;
+    height: 25%;
+    width: 20%;
+    top: 2%;
+    right: 1%;
+
+}
+
+
+td,th{
+    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: separate;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+th{
+    font-size: 1.5vw;
+}
+
+.tblbutton{
+    /* position: absolute; */
+    border-radius: 5%;
+    padding: 0.5%;
+    border: none;
+    background-color: rgb(0, 217, 255);
+    box-shadow: 0.8px 0.8px 0px 0px;
+    font-weight: 700;
+    width: 38%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9vw;
+    opacity: 0%;
+}
+
+.tblbutton:active{
+    scale: 0.9;
+}
+
+
+#timerback{
+    position: absolute;
+    height: 18%;
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+    left: 2%;
+    top: 0.5%;
+    transition: all;
+    transition-duration: 1s;
+    color: white;
+    opacity: 0%;
+
+}
+
+#forward{
+    position: absolute;
+    font-size: 1vw;
+    left: 5%;
+    padding: 1%;
+}
+
+#naming{
+    position: absolute;
+    bottom: 0%;
+    left: 11%;
+    font-size: 2vw;
+}
+
+
+
+#timevalue2{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 10%;
+    width: 10%;
+    border: 1px solid black;
+    color: rgb(255, 0, 0);
+    font-family: digital;
+    font-size: 3vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+    top: 4%;
+    left: 2%;
+    border-radius: 3%;
+    opacity: 0%;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#stp5{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    visibility: hidden;
+
+}
+
+
+
+#tbl2{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    height: 35%;
+    width: 60%;
+    top: 5%;
+    left: 20%;
+
+}
+
+#formula{
+    position: absolute;
+    top: 70%;
+    font-size: 1.5vw;
+    color: blue;
+    cursor: pointer;
+    left: 25%;
+}
+
+#clicker{
+    position: absolute;
+    top: 70.8%;
+    font-size: 1vw;
+    color: brown;
+    left: 13%;
+}
+
+#formulaimg{
+    position: absolute;
+    top: 72%;
+    height: 0%;
+    /* height: 25%; */
+    width: 45%;
+    left: 35%;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+#capacity{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#stability{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+#capacityinput{
+    /* border: 1px solid black; */
+    font-size: 1.3vw;
+    width: 20%;
+    font-weight: bold;
+}
+
+#stabilityinput{
+    /* border: 1px solid black; */
+    font-size: 1.3vw;
+    width: 20%;
+    font-weight: bold;
+}
+
+.checked{
+    position: absolute;
+    background-color: greenyellow;
+    padding: 2px;
+    border-radius: 1%;
+    top: 55%;
+    left: 50%;
+    /* height: 4%; */
+    /* width: 5%; */
+    font-size: 1vw;
+    box-shadow: 0.5px 0.5px 0px 0px;
+    border: 0.5px solid black;
+}
+
+#check2{
+    top: 65%;
+}
+
+.checked:active{
+    scale: 0.9;
+}
+
+#checktext1{
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    font-size: 1.3vw;
+    font-weight: 800;
+    /* color: green; */
+}
+
+#checktext2{
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    font-size: 1.3vw;
+    font-weight: 800;
+    /* color: green; */
+}
+
+.results{
+    position: absolute;
+    background-color: rgb(47, 238, 255);
+    padding: 2px;
+    border-radius: 1%;
+    /* top: 55%; */
+    left: 150%;
+    /* height: 4%; */
+    /* width: 5%; */
+    font-size: 1vw;
+    box-shadow: 0.5px 0.5px 0px 0px;
+    border: 0.5px solid black;
+    /* color: white; */
+}
+
+#stp6{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    visibility: hidden;
+    text-align: center;
+}
+
+#inference{
+    /* position: absolute; */
+    font-size: 4vw;
+    padding: 2%;
+}
+
+#outcome{
+    /* position: absolute; */
+    padding: 5%;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+
+
+
+
+/* #foam1{
+    height: 14%;
+    bottom: 12%;
+    left: 41.34%;
+}
+
+#foam2{
+    height: 19%;
+    bottom: 12%;
+    left: 52.34%;
+}
+
+#foam3{
+    height: 21%;
+    bottom: 12%;
+    left: 63.34%;
+}
+
+#foam4{
+    height: 22.5%;
+    bottom: 12%;
+    left: 74.34%;
+}
+
+#foam5{
+    height: 20.5%;
+    bottom: 12%;
+    left: 85.34%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes mixer{
+    /* 0%{width: 3.2%;
+        left: 17.1%;} */
+    50%{width: 1%;
+        left:18.2% ;}
+    /* 100%{width: 3.2%;
+        left: 17.1%;} */
+}
+
+
+
+
+
+@keyframes blinking{
+    0%{opacity: 0%;}
+    50%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
+@keyframes blinkingnob{
+    0%{opacity: 0%;}
+    50%{opacity: 40%;}
+    100%{opacity: 0%;}
+}
+
+@keyframes vibrate {
+    0%{scale: 1.001;}
+    50%{scale: 1.0;}    
+    100%{scale: 1.001;}
+    
+}
+
+@keyframes Steps{
+    0%{left: -641px;}
+    100%{left: 0px;}
+}

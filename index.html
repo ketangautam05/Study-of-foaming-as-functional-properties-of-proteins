@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determination of functional property (Foaming property) of protein</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+  <main class="main">
+    <div class="header" id="header">
+          <h1 id="ins">Instructions :-</h1>
+          <h1 id="text"> Click on 'START' button to start the experiment</h1>
+        </div>
+
+        
+        <div class="footer">
+            
+          <div id="experiment">
+            
+            <!-- ------------------------------  TABLES AND BACKGROUNDS  ----------------------- -->
+            
+            <!-- <img id="workingtable" src="images/working-area-empty1-big-lab1.jpg" alt=""> -->
+            <img id="workingtable" src="images/bgAsset.png" alt="">
+            <!-- <img id="startinglab" src="images/my-lab-new.png" alt=""> -->
+
+
+            <div id="stp1">
+
+              <img id="machine" src="images/wheighing-machine.png" alt="">
+              <img id="spatula" onclick="spatula1()" src="images/spatula.png" alt="">
+              
+              
+              <img class="sample" id="sample1" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample2" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample3" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample4" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample5" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample6" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample7" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample8" src="images/protien sample2.png" alt="">
+              <img class="sample" id="sample9" src="images/protien sample2.png" alt="">
+
+              
+              <img id="protien" src="images/whey-protien-main.png" alt="">
+              <img id="protiencap" onclick="cap1()" src="images/whey-protien-cap.png" alt="">
+              <button id="on" onclick="on1()">ON</button>
+              <button id="tare" onclick="tare1()">TARE</button>
+              <h3 id="reading">00.00</h3>
+
+            </div>
+
+
+
+            
+
+
+
+
+
+
+            <div id="stp2">
+
+              <img id="ms" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="dwatersol" src="images/distilled-water-solution.png" alt="">
+              <img id="distilled" onclick="diswater()" src="images/distilled water.png" alt="">
+              <img id="msolution" src="images/measuring-cylinder-solution.png" alt="">
+              <img id="mcylinder" onclick="measure()" src="images/measuring cylinder.png" alt="">
+              
+            </div>
+
+
+
+
+
+
+            <!-- ----------------------  FLASK SOLUTION  ------------------------------ -->
+
+            <img class="fsol" id="sol1" src="images/flask-solution.png" alt="">
+            <img class="fsol" id="sol2" src="images/flask-solution.png" alt="">
+            <img class="fsol" id="sol3" src="images/flask-solution.png" alt="">
+            <img class="fsol" id="sol4" src="images/flask-solution.png" alt="">
+            <img class="fsol" id="sol5" src="images/flask-solution.png" alt="">
+
+            <div id="stp3">
+
+              <img id="stand" src="images/stirrer machine-stand.png" alt="">
+
+              <div id="completestirrer">
+
+                
+                <img id="stirrer" src="images/stirrer machine.png" alt="">
+                <img id="nob" src="images/stirrer-nob.png" alt="">
+                <div id="nobleft" onclick="nobleft1()"></div>
+                <div id="nobright" onclick="nobright1()"></div>
+                <img id="bit" src="images/stirrer bit.png" alt="">
+                <img id="blade" src="images/blade.png" alt="">
+                <img id="startbtn" onclick="start1()" src="images/start.png" alt="">
+                <img id="timerbtn" onclick="timer1()" src="images/timer.png" alt="">
+                <img id="rpm" onclick="rpm1()" src="images/rpm.png" alt="">
+                <img id="poweroff" onclick="power()" src="images/poweroff.png" alt="">
+                <img id="poweron" onclick="power()" src="images/poweron.png" alt="">
+                
+                <div id="values">
+                  <div id="values1">
+                  </div>
+                  
+                  <h3 id="vrpm">0</h3>
+                  <h5 id="realrpm">Real rpm</h3>
+                  <h5 id="setrpm">Set rpm</h5>
+                  <h5 id="srpm">0000</h5>
+                  
+                  <h5 id="timeh">Timer :</h5>
+                  <h5 id="settimeh">Set :</h5>
+                  <h5 id="settimetext">min : sec</h5>
+                  
+                  <div id="timevalue"> 
+                    <span class="digit" id="min">00</span> 
+                    <span class="digit" id="collon">:</span> 
+                    <span class="digit" id="sec"> 00</span> 
+                  </div>
+
+                  
+
+                  <div id="timevalue1"> 
+                    <span class="digit" id="minset">00</span> 
+                    <span class="digit">:</span> 
+                    <span class="digit" id="secset"> 00</span> 
+                  </div>
+
+                  <div id="timerdiv">
+                  </div>
+                    
+                    
+                </div>
+                
+              </div>
+              <img id="cyclone" src="images/cyclone2.png" alt="">
+              
+              
+              
+              
+            </div>
+            
+            
+            
+            
+            
+            <img class="foams" id="foam1" src="images/foam77ml.png" alt="">
+            <img class="foams" id="foam2" src="images/foam104ml.png" alt="">
+            <img class="foams" id="foam3" src="images/foam137ml.png" alt="">
+            <img class="foams" id="foam4" src="images/foam142ml.png" alt="">
+            <img class="foams" id="foam5" src="images/foam126ml.png" alt="">
+
+
+            
+            
+            <div id="stp4" >
+
+              <img id="fallingfoam" src="images/falling foam.png" alt="">
+
+              <div id="c3">
+                <img class="cfoams" id="cfoam3" src="images/cfoam137.png" alt="">
+                <img class="m200" id="measuring3" src="images/measuring cylinder 200ml.png" alt="">
+                <h3 class="m200text" id="t3">C3</h3>
+              </div>
+              
+              
+              <div id="c1">
+                <img class="cfoams" id="cfoam1" src="images/cfoam77.png" alt="">
+                <img class="m200" id="measuring1" src="images/measuring cylinder 200ml.png" alt="">
+                <h3 class="m200text" id="t1">C1</h3>
+              </div>
+              
+              <div id="c2">
+                <img class="cfoams" id="cfoam2" src="images/cfoam104.png" alt="">
+                <img class="m200" id="measuring2" src="images/measuring cylinder 200ml.png" alt="">
+                <h3 class="m200text" id="t2">C2</h3>
+              </div>
+              
+              <div id="c5">
+                <img class="cfoams" id="cfoam5" src="images/cfoam126.png" alt="">
+                <img class="m200" id="measuring5" src="images/measuring cylinder 200ml.png" alt="">
+                <h3 class="m200text" id="t5">C5</h3>
+              </div>
+              
+              <div id="c4">
+                <img class="cfoams" id="cfoam4" src="images/cfoam142.png" alt="">
+                <img class="m200" id="measuring4" src="images/measuring cylinder 200ml.png" alt="">
+                <h3 class="m200text" id="t4">C4</h3>
+              </div>
+
+              <table class="tables" id="tbl1">
+                <thead>
+                  <tr>
+                    <th>Sample</th>
+                    <th id="tableh2">Volume of foam (ml)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>S1</td>
+                    <td id="data1"><button  class="tblbutton" id="b1" onclick="mbutton()">MEASURE</button></td>
+                  </tr>
+                  <tr>
+                    <td>S2</td>
+                    <td id="data2"><button  class="tblbutton" id="b2" onclick="mbutton()">MEASURE</button></td>
+                  </tr>
+                  <tr>
+                    <td>S3</td>
+                    <td id="data3"><button  class="tblbutton" id="b3" onclick="mbutton()">MEASURE</button></td>
+                  </tr>
+                  <tr>
+                    <td>S4</td>
+                    <td id="data4"><button  class="tblbutton" id="b4" onclick="mbutton()">MEASURE</button></td>
+                  </tr>
+                  <tr>
+                    <td>S5</td>
+                    <td id="data5"><button  class="tblbutton" id="b5" onclick="mbutton()">MEASURE</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+              
+              
+              <div id="timerback">
+                    <h3 id="forward"> 50x forward >></h3>
+                    <h3 id="naming">MM : SS</h3>
+              </div>
+
+              <div id="timevalue2"> 
+                <span class="digit1" id="min2">00</span> 
+                <span class="digit1" id="collon2">:</span> 
+                <span class="digit1" id="sec2"> 00</span> 
+              </div>
+
+
+
+              
+            </div>
+
+            
+            
+            
+            
+            
+            <!-- ----------------------  EMPTY FLASK ----------------- -->
+
+            <img class="eflask" id="s1" onclick="beakerplace()" src="images/flaskS1.png" alt="">
+            <img class="eflask" id="s2" onclick="beakerplace()" src="images/flaskS2.png" alt="">
+            <img class="eflask" id="s3" onclick="beakerplace()" src="images/flaskS3.png" alt="">
+            <img class="eflask" id="s4" onclick="beakerplace()" src="images/flaskS4.png" alt="">
+            <img class="eflask" id="s5" onclick="beakerplace()" src="images/flaskS5.png" alt="">  
+
+
+
+            <div id="stp5">
+
+              <table class="tables" id="tbl2" >
+                <tr>
+                  <th>Sample <br>name</th>
+                  <th>Concentration <br>(%)</th>
+                  <th>Volume of <br>foam (ml)</th>
+                  <th>Volume of foam <br>after 60 min (ml)</th>
+                  <th>Foaming capacity <br>(%)</th>
+                  <th>Foaming stability <br>(%)</th>
+                </tr>
+                <tr>
+                  <td>S1</td>
+                  <td>0.5</td>
+                  <td>77</td>
+                  <td>57</td>
+                  <td id="j1"></td>
+                  <td id="k1"></td>
+                </tr>
+                <tr>
+                  <td>S2</td>
+                  <td>1</td>
+                  <td>104</td>
+                  <td>92</td>
+                  <td id="j2"></td>
+                  <td id="k2"></td>
+                </tr>
+                <tr>
+                  <td>S3</td>
+                  <td>1.5</td>
+                  <td>137</td>
+                  <td>124</td>
+                  <td id="j3"></td>
+                  <td id="k3"></td>
+                </tr>
+                <tr>
+                  <td>S4</td>
+                  <td>2</td>
+                  <td>142</td>
+                  <td>131</td>
+                  <td id="j4"></td>   
+                  <td id="k4"></td>   
+                </tr>
+                <tr>
+                  <td>S5</td>
+                  <td>2.5</td>
+                  <td>126</td>
+                  <td>118</td>
+                  <td id="j5"></td>  
+                  <td id="k5"></td>     
+                  </tr>
+              </table>
+
+              <h3 id="capacity">Foam Capacity (%) = <input id="capacityinput"  placeholder="S1"></h3>
+              <h3 id="checktext1"></h3>
+              <h3 id="stability">Foam Stability (%) = <input id="stabilityinput"  placeholder="S1"></h3>
+              <h3 id="checktext2"></h3>
+              <button class="checked" id="check1" onclick="capacitychecker()">Check</button>
+              <button class="checked" id="check2" onclick="stabilitychecker()">Check</button>
+
+              <h1 id="formula" onclick="formula1()">Formula</h1>
+              <h3 id="clicker">click to show formula--- </h3>
+              <img id="formulaimg" src="images/Capture.PNG" alt="">
+
+            </div>
+
+            <div id="stp6">
+              <h1 id="inference">Inference</h1>
+              <h1 id="outcome">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Placeat earum maxime necessitatibus, eaque autem, ex praesentium tempora <br>
+                repudiandae asperiores accusamus accusantium beatae a corrupti reiciendis <br>
+                distinctio excepturi? Possimus, eaque corporis!</h1>
+            </div>
+            
+               
+                
+            <button id="start" onclick="start()" >START</button>
+          </div>
+        </div>
+
+
+        
+    </main>
+    <script src="script/project.js"></script>
+    <script src="script/step1.js"></script>
+    <script src="script/step2.js"></script>
+    <script src="script/step3.js"></script>
+    <script src="script/step3extended.js"></script>
+    <script src="script/step4.js"></script>
+    <script src="script/step5.js"></script>
+    <script src="script/stopwatch.js"></script>
+    <script src="script/stopwatch2.js"></script>  
+    <script src="script/bypass.js"></script>
+</body>
+</html>
