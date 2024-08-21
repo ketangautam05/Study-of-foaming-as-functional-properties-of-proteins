@@ -58,7 +58,7 @@ function rpm1(){
     if(f==101){
         f=102
         srpm.style.animationIterationCount="infinite";
-        ins.innerText="Click on Blue nob's left and right sides to rotate and set rpm to 200"
+        ins.innerText="Click on Blue nob to rotate it and set rpm to 200. The blinking boxes on blue knob indicating the area where you have to click to rotate it."
         nobright.style.animationIterationCount="infinite"
         nobleft.style.animationIterationCount="infinite"
     }
@@ -217,10 +217,10 @@ function start1(){
         if(running==false){
             startBtntimer()
             foam.style.transitionDuration="110s"
-            foam.style.bottom="4%"
+            foam.style.bottom=foambottom
             foam.style.height=foamheight
             powder.style.opacity="0%"
-            ins.innerText="Wait to completing the whipping process."
+            ins.innerText="Wait to complete the whipping process."
             if(eflask!=s1){
                 powder1.style.opacity="0%"
             }
@@ -230,7 +230,7 @@ function start1(){
         blade.style.animationIterationCount="infinite"
         cyclone.style.animationIterationCount="infinite"
         completestirrer.style.animationIterationCount="infinite"
-        cyclone.style.height="10%"
+        cyclone.style.height="6.2%"
         if(animator==-8.205242041370298e-16){
             f=204
         }
@@ -268,7 +268,7 @@ function start1(){
             cyclone.style.animationIterationCount="0"
             completestirrer.style.animationIterationCount="0"
             foam.style.transitionDuration="1s"
-            solution.style.opacity="0%"
+            solution.style.transitionDuration="1s"
             f=211
         }
         if(animator<1){

@@ -15,21 +15,27 @@ function pourfoam(){
         foam.style.transitionDuration="1s"
         eflask.style.bottom="47%"
         eflask.style.left="41.5%"
-        foam.style.bottom="47.2%"
+        foam.style.bottom="52.1%"
         foam.style.left="42.88%"
+        solution.style.bottom="47.1%"
+        solution.style.left="42.96%"
         setTimeout(function(){
             eflask.style.rotate="-45deg"
             foam.style.rotate="-45deg"
+            solution.style.rotate="-45deg"
             eflask.style.bottom="54.5%"
             eflask.style.left="39.5%"
             foam.style.bottom=foambottom
             foam.style.left=foamleft
+            solution.style.bottom="58.1%"
+            solution.style.left="43.6%"
+            // vis
             setTimeout(function(){
                 eflask.style.transitionDuration="4s"
                 foam.style.transitionDuration="4s"
                 foam.style.height="0%"
-                foam.style.left="43.8%"
-                foam.style.bottom="60.5%"
+                foam.style.left="42.6%"
+                foam.style.bottom="63.6%"
                 document.querySelector("#fallingfoam").style.height="55.7%"
                 document.querySelector("#fallingfoam").style.bottom="13%"
                 setTimeout(function(){
@@ -44,10 +50,14 @@ function pourfoam(){
                         eflask.style.bottom="10%"
                         eflask.style.rotate="0deg"
                         eflask.style.left="40%"
+                        solution.style.rotate="0deg"
+                        solution.style.left="41.43%"
+                        solution.style.bottom="10%"
                         document.querySelector(text).style.opacity="100%"
                         setTimeout(function(){
                             document.querySelector("#fallingfoam").style.bottom="68.7%"
                             eflask.style.opacity="0%"
+                            solution.style.opacity="0%"
                             setTimeout(function(){
                                 f=403
                                 document.querySelector(buttonselector).style.opacity="100%"
@@ -65,6 +75,7 @@ function verify(){
     if(eflask==s1){
         eflask=s2
         foam=foam2
+        solution=sol2
         cfoamheight = "25%"
         cfoamselector = "#cfoam2"
         cselector = "#c2"
@@ -76,13 +87,14 @@ function verify(){
         buttonselector="#b2"
         dataselector="#data2"
         data="104 ml"
-        foambottom="56.4%"
-        foamleft="41.5%"
+        foambottom="61.1%"
+        foamleft="41.3%"
 
     }
     else if(eflask==s2){
         eflask=s3
         foam=foam3
+        solution=sol3
         cfoamheight = "35%"
         cfoamselector = "#cfoam3"
         cselector = "#c3"
@@ -94,13 +106,14 @@ function verify(){
         buttonselector="#b3"
         dataselector="#data3"
         data="137 ml"
-        foambottom="56.1%"
-        foamleft="41.2%"
+        foambottom="60.2%"
+        foamleft="41.1%"
 
     }
     else if(eflask==s3){
         eflask=s4
         foam=foam4
+        solution=sol4
         cfoamheight = "36.8%"
         cfoamselector = "#cfoam4"
         cselector = "#c4"
@@ -112,13 +125,14 @@ function verify(){
         buttonselector="#b4"
         dataselector="#data4"
         data="142 ml"
-        foambottom="55.9%"
-        foamleft="41%"
+        foambottom="59.7%"
+        foamleft="41.2%"
 
     }
     else if(eflask==s4){
         eflask=s5
         foam=foam5
+        solution=sol5
         cfoamheight = "31.5%"
         cfoamselector = "#cfoam5"
         cselector = "#c5"
@@ -129,8 +143,8 @@ function verify(){
         buttonselector="#b5"
         dataselector="#data5"
         data="126 ml"
-        foambottom="56.1%"
-        foamleft="41.3%"
+        foambottom="59.5%"
+        foamleft="41.45%"
     }
     else if(eflask==s5){
         resizecylinder()

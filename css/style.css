@@ -170,9 +170,9 @@ body{
 
 .fsol{
     position: absolute;
-    /* height: 10.3%; */
+    /* height: 6.5%; */
     height: 0%;
-    width: 7.8%;
+    width: 7.7%;
     bottom: 10.2%;
     /* top: 79.5%; */
     transition: all;
@@ -180,23 +180,23 @@ body{
 }
 
 #sol1{
-    left: 41.38%;
+    left: 41.43%;
 }
 
 #sol2{
-    left: 52.38%;
+    left: 52.43%;
 }
 
 #sol3{
-    left: 63.38%;
+    left: 63.43%;
 }
 
 #sol4{
-    left: 74.38%;
+    left: 74.43%;
 }
 
 #sol5{
-    left: 85.38%;
+    left: 85.43%;
 }
 
 
@@ -447,8 +447,10 @@ body{
     position: absolute;
     height: 2%;
     width: 3.2%;
-    top: 70%;
+    top: 68.5%;
     left: 17.1%;
+    /* left: 18.5%;
+    width: 0.4%; */
     transition: all;
     transition-duration: 1s;
     animation: mixer;
@@ -469,7 +471,7 @@ body{
 #nobleft{
     position: absolute;
     height: 7%;
-    width: 1%;
+    width: 1.7%;
     background-color: aqua;
     top: 28.3%;
     left: 16.8%;
@@ -482,10 +484,10 @@ body{
 #nobright{
     position: absolute;
     height: 7%;
-    width: 1%;
+    width: 1.7%;
     background-color: aqua;
     top: 28.3%;
-    left: 19.8%;
+    left: 19%;
     animation: blinkingnob;
     animation-duration: 0.8s;
     animation-iteration-count:0;
@@ -708,8 +710,8 @@ body{
 #cyclone{
     position: absolute;
     width: 7.8%;
-    top: 85.5%;
-    /* height: 10%; */
+    top: 89.3%;
+    /* height: 6.2%; */
     height: 0%;
     left: 14.88%;   
     transition: all;
@@ -723,11 +725,11 @@ body{
 .foams{
     position: absolute;
     height: 0%;
-    /* height: 0%; */
-    width: 7.83%;
+    width: 7.78%;
     left: 14.84%;
-    bottom: 14.5%;
-    /* top: 79.5%; */
+    bottom: 10.7%;
+    /* height: 10%; */
+    /* bottom: 7.4%; */
     transition: all;
     transition-duration: 110s;
 }
@@ -1081,36 +1083,38 @@ th{
 
 
 
+/* #sol1,#sol2,#sol3,#sol4,#sol5{
+    height: 6.3%;
+}
 
-
-/* #foam1{
-    height: 14%;
-    bottom: 12%;
-    left: 41.34%;
+#foam1{
+    height: 7.8%;
+    bottom: 15.1%;
+    left: 41.35%;
 }
 
 #foam2{
-    height: 19%;
-    bottom: 12%;
-    left: 52.34%;
+    height: 10.7%;
+    bottom: 14.8%;
+    left: 52.35%;
 }
 
 #foam3{
-    height: 21%;
-    bottom: 12%;
-    left: 63.34%;
+    height: 13.5%;
+    bottom: 14.5%;
+    left: 63.35%;
 }
 
 #foam4{
-    height: 22.5%;
-    bottom: 12%;
-    left: 74.34%;
+    height: 14%;
+    bottom: 14.1%;
+    left: 74.35%;
 }
 
 #foam5{
-    height: 20.5%;
-    bottom: 12%;
-    left: 85.34%;
+    height: 13%;
+    bottom: 13.5%;
+    left: 85.35%;
 } */
 
 
@@ -1131,8 +1135,8 @@ th{
 @keyframes mixer{
     /* 0%{width: 3.2%;
         left: 17.1%;} */
-    50%{width: 1%;
-        left:18.2% ;}
+    50%{width: 0.4%;
+        left:18.5% ;}
     /* 100%{width: 3.2%;
         left: 17.1%;} */
 }
@@ -1149,7 +1153,7 @@ th{
 
 @keyframes blinkingnob{
     0%{opacity: 0%;}
-    50%{opacity: 40%;}
+    50%{opacity: 70%;}
     100%{opacity: 0%;}
 }
 

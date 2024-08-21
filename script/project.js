@@ -51,8 +51,8 @@ function start(){
     }
     else if(f==400){
         f=401
-        foamleft="42.3%"
-        foambottom="57.2%"
+        foamleft="41.4%"
+        foambottom="62.3%"
         poweron.style.visibility="hidden"
         stp3.style.visibility="hidden"
         stp4.style.visibility="visible"
