@@ -216,7 +216,7 @@ function start1(){
         f=205
         if(running==false){
             startBtntimer()
-            foam.style.transitionDuration="110s"
+            foam.style.transitionDuration="25s"
             foam.style.bottom=foambottom
             foam.style.height=foamheight
             powder.style.opacity="0%"
@@ -247,16 +247,16 @@ function start1(){
                 start1()
             },20)
         }
-        setTimeout(function(){
-            stopBtn()
-            start1()
-            setTimeout(function(){
-                completestirrer.style.top="-2%"
-                ins.innerText="Click on beaker to remove it from under the whipping machine."
-                timecounter=0
-                console.log(f)
-            },5000)
-        },120000)
+        // setTimeout(function(){
+        //     stopBtn()
+        //     start1()
+        //     setTimeout(function(){
+        //         completestirrer.style.top="-2%"
+        //         ins.innerText="Click on beaker to remove it from under the whipping machine."
+        //         timecounter=0
+        //         console.log(f)
+        //     },5000)
+        // },/*120000*/30000)
     }
     else if(f==204){
         f=210

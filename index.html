@@ -160,6 +160,7 @@
               <img id="fallingfoam" src="images/falling foam.png" alt="">
 
               <div id="c3">
+                <img class="m200sol" id="m2sol3" src="images/measuring cylinder 200ml-solution.png" alt="">
                 <img class="cfoams" id="cfoam3" src="images/cfoam137.png" alt="">
                 <img class="m200" id="measuring3" src="images/measuring cylinder 200ml.png" alt="">
                 <h3 class="m200text" id="t3">C3</h3>
@@ -167,24 +168,28 @@
               
               
               <div id="c1">
+                <img class="m200sol" id="m2sol1" src="images/measuring cylinder 200ml-solution.png" alt="">
                 <img class="cfoams" id="cfoam1" src="images/cfoam77.png" alt="">
                 <img class="m200" id="measuring1" src="images/measuring cylinder 200ml.png" alt="">
                 <h3 class="m200text" id="t1">C1</h3>
               </div>
               
               <div id="c2">
+                <img class="m200sol" id="m2sol2" src="images/measuring cylinder 200ml-solution.png" alt="">
                 <img class="cfoams" id="cfoam2" src="images/cfoam104.png" alt="">
                 <img class="m200" id="measuring2" src="images/measuring cylinder 200ml.png" alt="">
                 <h3 class="m200text" id="t2">C2</h3>
               </div>
               
               <div id="c5">
+                <img class="m200sol" id="m2sol5" src="images/measuring cylinder 200ml-solution.png" alt="">
                 <img class="cfoams" id="cfoam5" src="images/cfoam126.png" alt="">
                 <img class="m200" id="measuring5" src="images/measuring cylinder 200ml.png" alt="">
                 <h3 class="m200text" id="t5">C5</h3>
               </div>
               
               <div id="c4">
+                <img class="m200sol" id="m2sol4" src="images/measuring cylinder 200ml-solution.png" alt="">
                 <img class="cfoams" id="cfoam4" src="images/cfoam142.png" alt="">
                 <img class="m200" id="measuring4" src="images/measuring cylinder 200ml.png" alt="">
                 <h3 class="m200text" id="t4">C4</h3>
@@ -307,9 +312,9 @@
                   </tr>
               </table>
 
-              <h3 id="capacity">Foam Capacity (%) = <input id="capacityinput"  placeholder="S1"></h3>
+              <h3 id="capacity">Foam Capacity (%) = <input type="number" maxlength="3" max="999" min="0" step="1.0" id="capacityinput" style="color:blue" placeholder="S1"></h3>
               <h3 id="checktext1"></h3>
-              <h3 id="stability">Foam Stability (%) = <input id="stabilityinput"  placeholder="S1"></h3>
+              <h3 id="stability">Foam Stability (%) = <input type="number" onchange="setTwoNumberDecimal()" maxlength="2" max="99.99" min="0" step="0.01" id="stabilityinput" style="color:blue" placeholder="S1"></h3>
               <h3 id="checktext2"></h3>
               <button class="checked" id="check1" onclick="capacitychecker()">Check</button>
               <button class="checked" id="check2" onclick="stabilitychecker()">Check</button>

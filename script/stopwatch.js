@@ -1,6 +1,7 @@
 let minute = 0; 
 let second = 0; 
 let running = false
+let itrcount = 0
   
 function startBtntimer() { 
     timer = true; 
@@ -23,6 +24,7 @@ function stopWatch() {
     running = true
     if (timer) { 
         second++; 
+        itrcount++;
   
   
         if (second == 60) { 
@@ -47,9 +49,20 @@ function stopWatch() {
             secString = "0" + secString; 
         } 
   
+
+        if(itrcount==120){
+            stopBtn()
+            start1()
+            setTimeout(function(){
+                completestirrer.style.top="-2%"
+                ins.innerText="Click on beaker to remove it from under the whipping machine."
+                timecounter=0
+                // console.log(f)
+            },5000)
+        }
   
         document.getElementById('min').innerHTML = minString; 
         document.getElementById('sec').innerHTML = secString; 
-        setTimeout(stopWatch, 1000); 
+        setTimeout(stopWatch, 250); 
     } 
 }

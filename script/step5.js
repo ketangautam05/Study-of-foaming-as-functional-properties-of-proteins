@@ -2,12 +2,11 @@
 
 
 let capacity1=54
-let stability1=74.026
+let stability1=74.03
 let j="#j1"
 let k="#k1"
 
 let ftext = 1
-
 
 function formula1(){
     if(ftext==1){
@@ -67,31 +66,31 @@ function result22(){
 function stabilityincrease(){
     document.querySelector("#stabilityinput").value=""
     nextstep()
-    if(stability1==74.026){
+    if(stability1==74.03){
         document.querySelector('#stabilityinput').placeholder="S2"
-        stability1=88.462
+        stability1=88.46
         ins.innerText="Now check 'Foaming stability' for sample S2"
         k="#k2"
     }
-    else if(stability1==88.462){
+    else if(stability1==88.46){
         document.querySelector('#stabilityinput').placeholder="S3"
-        stability1=90.511
+        stability1=90.51
         ins.innerText="Now check 'Foaming stability' for sample S3"
         k="#k3"
     }
-    else if(stability1==90.511){
+    else if(stability1==90.51){
         document.querySelector('#stabilityinput').placeholder="S4"
-        stability1=92.254
+        stability1=92.25
         ins.innerText="Now check 'Foaming stability' for sample S4"
         k="#k4"
     }
-    else if(stability1==92.254){
+    else if(stability1==92.25){
         document.querySelector('#stabilityinput').placeholder="S5"
-        stability1=93.651
+        stability1=93.65
         ins.innerText="Now check 'Foaming stability' for sample S5"
         k="#k5"
     }
-    else if(stability1==93.651 && capacity1!=152){
+    else if(stability1==93.65 && capacity1!=152){
         ins.innerText="Complete all calculations of 'Foam capacity' for remaining samples."
     }
 
@@ -124,17 +123,30 @@ function capacityincrease(){
         ins.innerText="Now check 'Foaming capacity' for sample S5"
         j="#j5"
     }
-    else if(capacity1==152 && stability1!=93.651){
+    else if(capacity1==152 && stability1!=93.65){
         ins.innerText="Complete all calculations of 'Foam Stability' for remaining samples."
     }
 
 }
 
 function nextstep(){
-    if(stability1==93.651 && capacity1==152){
+    if(stability1==93.65 && capacity1==152){
         f=450
         startbutton.innerText="Inference"
         startbutton.style.visibility="visible"
         ins.innerText="All tests and calculations are done. Please Press 'Inference' button to know the outcome of this experiment"
     }
 }
+
+
+
+
+
+
+function setTwoNumberDecimal(event){
+    document.querySelector("#stabilityinput").value = parseFloat(document.querySelector("#stabilityinput").value).toFixed(2);
+}
+
+// function setTwoNumber(event){
+//     document.querySelector("#capacityinput").value = document.querySelector("#capacityinput").value.toFixed(3);
+// }

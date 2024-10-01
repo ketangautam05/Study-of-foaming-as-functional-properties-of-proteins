@@ -60,6 +60,7 @@ function start(){
         ins.innerText="click on beaker S1 to pour foam solution inside a measuring cylinder."
         foam=foam1
         eflask=s1
+        solution=sol1
     }
     else if(f==406){
         f=410

@@ -8,6 +8,7 @@ let text="#t1"
 let buttonselector = "#b1"
 let dataselector = "#data1"
 let data = "77 ml"
+let m2solselector = "#m2sol1"
 
 function pourfoam(){
     if(f==401){
@@ -29,18 +30,25 @@ function pourfoam(){
             foam.style.left=foamleft
             solution.style.bottom="58.1%"
             solution.style.left="43.6%"
-            // vis
             setTimeout(function(){
                 eflask.style.transitionDuration="4s"
-                foam.style.transitionDuration="4s"
+                foam.style.transitionDuration="3s"
                 foam.style.height="0%"
                 foam.style.left="42.6%"
                 foam.style.bottom="63.6%"
                 document.querySelector("#fallingfoam").style.height="55.7%"
                 document.querySelector("#fallingfoam").style.bottom="13%"
                 setTimeout(function(){
+                    document.querySelector(m2solselector).style.height="11%"
+                    document.querySelector(cfoamselector).style.bottom="20%"
+                    solution.style.bottom="60.1%"
+                    solution.style.left="43.8%"
+                    solution.style.height="0%"
+                },3000)
+                // vis
+                setTimeout(function(){
                     document.querySelector("#fallingfoam").style.height="0%"
-                },3800)
+                },4000)
                 setTimeout(function(){
                     document.querySelector(cfoamselector).style.height=cfoamheight
                     document.querySelector(cfoamselector).style.bottom="12%"
@@ -62,9 +70,12 @@ function pourfoam(){
                                 f=403
                                 document.querySelector(buttonselector).style.opacity="100%"
                                 ins.innerText="Click on 'MEASURE' button appeared in table to know initial volume of foam."
+                                setTimeout(function(){
+                                    eflask.style.visibility="hidden"
+                                },500)
                             },500)
                         },1500)
-                    },4000)
+                    },5000)
                 },200)
             },1000)
         },1000)
@@ -89,6 +100,7 @@ function verify(){
         data="104 ml"
         foambottom="61.1%"
         foamleft="41.3%"
+        m2solselector = "#m2sol2"
 
     }
     else if(eflask==s2){
@@ -108,6 +120,7 @@ function verify(){
         data="137 ml"
         foambottom="60.2%"
         foamleft="41.1%"
+        m2solselector = "#m2sol3"
 
     }
     else if(eflask==s3){
@@ -127,6 +140,7 @@ function verify(){
         data="142 ml"
         foambottom="59.7%"
         foamleft="41.2%"
+        m2solselector = "#m2sol4"
 
     }
     else if(eflask==s4){
@@ -145,6 +159,7 @@ function verify(){
         data="126 ml"
         foambottom="59.5%"
         foamleft="41.45%"
+        m2solselector = "#m2sol5"
     }
     else if(eflask==s5){
         resizecylinder()

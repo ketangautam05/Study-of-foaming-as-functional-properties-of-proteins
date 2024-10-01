@@ -27,6 +27,7 @@ function placebeaker(){
         f=150
         running=false
         resetBtn()
+        itrcount=0
         // ins.innerText="ok"
         completestirrer.style.top="-2%"
         eflask.style.left="13.5%"

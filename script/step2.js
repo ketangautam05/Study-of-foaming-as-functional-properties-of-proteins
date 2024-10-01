@@ -93,7 +93,7 @@ function measure(){
                 msol.style.bottom="49.7%"
                 setTimeout(function(){
                     ms.style.visibility="visible"
-                    solution.style.height="6.5%"
+                    solution.style.height="6.3%"
                     msol.style.height="0%"
                     msol.style.left=msolleft2
                     msol.style.bottom="51%"
